@@ -1,7 +1,7 @@
 /*Hero Animations*/
 const animatedText = document.querySelector('.animated-text');
 if (animatedText) {
-  animatedText.innerHTML = `<span>Stylish Blinds Stylish Blinds Stylish Blinds </span>`;
+  animatedText.innerHTML = `<span>Handcrafted Crochet Décor </span>`;
 }
 
 // Example: Log the products to the console
@@ -304,6 +304,7 @@ function renderProducts(productsToRender, containerId) {
 
 
 // Product Detail Page
+// Product Detail Page
 function loadProductDetail() {
   const urlParams = new URLSearchParams(window.location.search);
   const productId = parseInt(urlParams.get('id'));
@@ -364,7 +365,7 @@ function loadProductDetail() {
           <button class="btn btn-primary" onclick="addToCartFromDetail()">
             <i class="fas fa-shopping-bag"></i> Add to Cart
           </button>
-          <button class="btn btn-outline" onclick="window.location.href='https://wa.me/916380655921?text=Hi! I am interested in ${encodeURIComponent(product.name)} - ₹${product.price}'">
+          <button class="btn btn-outline" onclick="window.location.href='https://wa.me/918401527288?text=Hi! I am interested in ${encodeURIComponent(product.name)} - ₹${product.price}'">
             <i class="fab fa-whatsapp"></i> Quick Order
           </button>
         </div>
@@ -397,6 +398,7 @@ function loadProductDetail() {
     .slice(0, 4);
   renderProducts(recentProducts, 'recently-viewed');
 }
+
 
 function changeMainImage(src) {
   const mainImage = document.getElementById('main-product-image');
