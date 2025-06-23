@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products - Crochea Shopping</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Fixed Contact Buttons -->
+    <div class="fixed-contact">
+      <a
+        href="https://wa.me/918401527288?text=Hi%2C%20I%20like%20this%20product.%20I%20want%20more%20information%20and%20photos%20about%20it."
+        class="contact-btn whatsapp"
+        title="WhatsApp"
+      >
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="tel:+918401527288" class="contact-btn phone" title="Call Us">
+        <i class="fas fa-phone"></i>
+      </a>
+    </div>
+
+    <!-- Floating Cart -->
+    <div class="floating-cart" onclick="window.location.href='cart.html'">
+      <i class="fas fa-shopping-bag"></i>
+      <span class="cart-count">0</span>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="nav-brand">
+          <h1>Crochea Shopping</h1>
+        </div>
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html" class="active">Products</a></li>
+            <li>
+              <a href="cart.html">Cart <span class="cart-badge">0</span></a>
+            </li>
+            <li><a href="checkout.html">Checkout</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Products Page -->
+    <main class="products-page">
+      <div class="container">
+        <div class="page-header">
+          <h1>Our Products</h1>
+          <p>Discover our complete range of premium Shopping products</p>
+        </div>
+
+        <div class="products-layout">
+          <!-- Filters Sidebar -->
+          <aside class="filters-sidebar">
+            <div class="filter-section">
+              <h3>Categories</h3>
+              <div class="filter-options">
+                <label class="filter-option">
+                  <input type="radio" name="category" value="all" checked />
+                  <span>All Products</span>
+                </label>
+                <label class="filter-option">
+                  <input type="radio" name="category" value="HairBows" />
+                  <span>Hair Bows</span>
+                </label>
+                <label class="filter-option">
+                  <input type="radio" name="category" value="CrochetRoses" />
+                  <span>Crochet Roses</span>
+                </label>
+                <label class="filter-option">
+                  <input type="radio" name="category" value="HairClips" />
+                  <span>Hair Clips</span>
+                </label>
+                <label class="filter-option">
+                  <input type="radio" name="category" value="Scrunchies" />
+                  <span>Scrunchies</span>
+                </label>
+              </div>
+            </div>
+
+<div class="filter-section">
+  <h3>Price Range</h3>
+  <div class="filter-options">
+    <label class="filter-option">
+      <input type="radio" name="price" value="all" checked />
+      <span>All Prices</span>
+    </label>
+    <label class="filter-option">
+      <input type="radio" name="price" value="0-130" />
+      <span>Below ₹130</span>
+    </label>
+    <label class="filter-option">
+      <input type="radio" name="price" value="130-200" />
+      <span>₹130 - ₹200</span>
+    </label>
+    <label class="filter-option">
+      <input type="radio" name="price" value="201-299" />
+      <span>₹201 - ₹299</span>
+    </label>
+    <label class="filter-option">
+      <input type="radio" name="price" value="300-399" />
+      <span>₹300 - ₹399</span>
+    </label>
+    <label class="filter-option">
+      <input type="radio" name="price" value="400+" />
+      <span>₹400 & Above</span>
+    </label>
+  </div>
+</div>
+
+
+            <div class="filter-section">
+              <h3>Sort By</h3>
+              <select id="sort-select">
+                <option value="popularity">Popularity</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="rating">Customer Rating</option>
+              </select>
+            </div>
+          </aside>
+
+          <!-- Products Grid -->
+          <div class="products-content">
+            <div class="products-header">
+              <div class="products-count">
+                <span id="product-count">Showing all products</span>
+              </div>
+              <div class="mobile-filter-toggle">
+                <button class="btn btn-secondary">
+                  <i class="fas fa-filter"></i> Filters
+                </button>
+              </div>
+            </div>
+            <div class="products-grid" id="products-grid">
+              <!-- Products will be loaded by JavaScript -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" onclick="scrollToTop()">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Crochea by Mahima</h3>
+            <p>
+              Delicate, handmade crochet creations designed by Mahima — crafted
+              with care to add warmth, charm, and individuality to your home and
+              lifestyle.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Customer Care</h4>
+            <ul>
+              <li><a href="#privacy">Privacy Policy</a></li>
+              <li><a href="#returns">Returns</a></li>
+              <li><a href="#shipping">Shipping Info</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Connect With Us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Crochea by Mahima. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
