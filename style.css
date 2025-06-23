@@ -206,7 +206,7 @@ input:focus, select:focus, textarea:focus {
 .mobile-menu-toggle span {
   width: 25px;
   height: 3px;
-  background: var(--dark);
+  background: black;
   border-radius: var(--radius-sm);
   transition: var(--transition-normal);
 }
@@ -1157,7 +1157,7 @@ input:focus, select:focus, textarea:focus {
   position: absolute;
   top: -5px;
   right: -5px;
-  background: var(--accent-blush);
+  background: palevioletred;
   color: var(--white);
   font-size: var(--font-size-xs);
   font-weight: 600;
