@@ -77,6 +77,8 @@ document.addEventListener('DOMContentLoaded', () => {
     filterProducts(); // Display all products initially
 });
 
+
+/*Product-Details Script*/
 // Function to load recently viewed and related products
 function loadRelatedAndRecentlyViewed() {
     const urlParams = new URLSearchParams(window.location.search);
@@ -111,3 +113,6 @@ document.addEventListener('DOMContentLoaded', () => {
         renderProductGrid();
     }
 });
+
+
+
