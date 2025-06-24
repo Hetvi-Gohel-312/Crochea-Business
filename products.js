@@ -4,76 +4,116 @@
 const products = [
   {
     id: 1,
-    name: "Crochet Hair Bow - Green",
+    name: "Crochet Hair Bow - Peach",
     category: "HairBows",
-    price: 299,
-    originalPrice: 399,
-    image: "images/bow (2).jpeg",
+    price: 130,
+    originalPrice: 130,
+    image: "images/smallbows (5).jpeg", // Update with the correct image path
     rating: 4.5,
     reviews: 22,
-    description: "Fresh green crochet hair bow, handmade with soft yarn for everyday wear.",
+    description: "Charming peach crochet hair bow, handmade with soft yarn for everyday wear.",
     features: ["Handmade", "Soft yarn", "Lightweight", "Secure grip"],
     ingredients: "Cotton Yarn, Metal Clip"
   },
   {
     id: 2,
-    name: "Crochet Hair Bow - Peach",
+    name: "Crochet Hair Bow - Olive",
     category: "HairBows",
-    price: 299,
-    originalPrice: 399,
-    image: "images/bow (3).jpeg",
+    price: 130,
+    originalPrice: 130,
+    image: "images/smallbows (2).jpeg", // Update with the correct image path
     rating: 4.6,
     reviews: 30,
-    description: "Peach-colored crochet hair bow, ideal for elegant looks with a handmade touch.",
+    description: "Elegant olive crochet hair bow, perfect for adding a touch of style.",
     features: ["Premium cotton yarn", "Durable clip", "Lightweight", "Easy to wear"],
     ingredients: "Cotton Yarn, Metal Clip"
   },
   {
     id: 3,
-    name: "Crochet Hair Bow - Red",
+    name: "Crochet Hair Bow - Blue",
     category: "HairBows",
-    price: 130, // Updated price
-    originalPrice: 399,
-    image: "images/clips (8).jpeg",
+    price: 130,
+    originalPrice: 130,
+    image: "images/smallbows (6).jpeg", // Update with the correct image path
     rating: 4.8,
     reviews: 50,
-    description: "Bold red crochet hair bow to add a pop of color to your hairstyle.",
+    description: "Cool blue crochet hair bow, a perfect handmade accessory for all ages.",
     features: ["Handcrafted design", "Bright color", "Soft yarn", "Secure hold"],
     ingredients: "Cotton Yarn, Metal Clip"
   },
   {
     id: 4,
-    name: "Crochet Hair Bow - Blue",
-    category: "HairBows",
-    price: 130, // Updated price
-    originalPrice: 399,
-    image: "images/clips (9).jpeg",
-    rating: 4.5,
-    reviews: 28,
-    description: "Cool blue crochet hair bow, a perfect handmade accessory for all ages.",
-    features: ["Handmade", "Soft texture", "Strong clip", "Lightweight"],
-    ingredients: "Cotton Yarn, Metal Clip"
-  },
-  {
-    id: 5,
     name: "Crochet Hair Bow - White",
     category: "HairBows",
-    price: 130, // Updated price
-    originalPrice: 399,
-    image: "images/clips (3).jpeg",
-    rating: 4.7,
-    reviews: 35,
+    price: 130,
+    originalPrice: 130,
+    image: "images/clips (3).jpeg", // Update with the correct image path
+    rating: 4.5,
+    reviews: 28,
     description: "Classic white crochet hair bow, perfect for weddings, casual, or festive wear.",
     features: ["Elegant style", "Handmade", "Soft yarn", "Secure grip"],
     ingredients: "Cotton Yarn, Metal Clip"
   },
-  // Dragon Bows - 2 colors
+  {
+    id: 5,
+    name: "Crochet Hair Bow - Red",
+    category: "HairBows",
+    price: 130,
+    originalPrice: 130,
+    image: "images/smallbows (4).jpeg", // Update with the correct image path
+    rating: 4.7,
+    reviews: 35,
+    description: "Bold red crochet hair bow to add a pop of color to your hairstyle.",
+    features: ["Handcrafted design", "Bright color", "Soft yarn", "Secure hold"],
+    ingredients: "Cotton Yarn, Metal Clip"
+  },
   {
     id: 6,
+    name: "Crochet Hair Bow - Yellow",
+    category: "HairBows",
+    price: 130,
+    originalPrice: 130,
+    image: "images/smallbows (1).jpeg", // Update with the correct image path
+    rating: 4.6,
+    reviews: 30,
+    description: "Bright yellow crochet hair bow, perfect for cheerful moods.",
+    features: ["Handmade", "Soft yarn", "Lightweight", "Secure grip"],
+    ingredients: "Cotton Yarn, Metal Clip"
+  },
+  {
+    id: 7,
+    name: "Crochet Hair Bow - Green (Medium)",
+    category: "HairBows",
+    price: 299,
+    originalPrice: 499,
+    image: "images/bow (2).jpeg", // Update with the correct image path
+    rating: 4.8,
+    reviews: 40,
+    description: "Fresh green medium crochet hair bow, handmade with soft yarn for a stylish look.",
+    features: ["Handmade", "Soft yarn", "Lightweight", "Secure grip"],
+    ingredients: "Cotton Yarn, Metal Clip"
+  },
+  {
+    id: 8,
+    name: "Crochet Hair Bow - Peach (Big)",
+    category: "HairBows",
+    price: 399,
+    originalPrice: 499,
+    image: "images/bow (3).jpeg", // Update with the correct image path
+    rating: 4.9,
+    reviews: 50,
+    description: "Stunning peach big crochet hair bow, perfect for special occasions.",
+    features: ["Handmade", "Soft yarn", "Elegant design", "Secure grip"],
+    ingredients: "Cotton Yarn, Metal Clip"
+  },
+
+  // Dragon Bows - 2 colors
+  {
+    id: 9,
     name: "Dragon Crochet Bow - Red",
     category: "HairBows",
-    price: 80, // Updated price
-    originalPrice: 499,
+    price: 60, // Updated price
+    originalPrice: 299,
     image: "images/clips (4).jpeg",
     rating: 4.7,
     reviews: 32,
@@ -83,11 +123,11 @@ const products = [
     ingredients: "Cotton Yarn, Metal Clip"
   },
   {
-    id: 7,
+    id: 10,
     name: "Dragon Crochet Bow - Yellow",
     category: "HairBows",
-    price: 80, // Updated price
-    originalPrice: 499,
+    price: 60, // Updated price
+    originalPrice: 299,
     image: "images/clips (5).jpeg",
     rating: 4.6,
     reviews: 28,
@@ -96,11 +136,11 @@ const products = [
     ingredients: "Cotton Yarn, Metal Clip"
   },
   {
-    id: 8,
+    id: 11,
     name: "Dragon Crochet Bow - Blue",
     category: "HairBows",
     price: 80, // Updated price
-    originalPrice: 499,
+    originalPrice: 299,
     image: "images/clips (6).jpeg",
     rating: 4.5,
     reviews: 25,
@@ -109,11 +149,11 @@ const products = [
     ingredients: "Cotton Yarn, Metal Clip"
   },
   {
-    id: 9,
+    id: 12,
     name: "Dragon Crochet Bow - Purple",
     category: "HairBows",
     price: 80, // Updated price
-    originalPrice: 499,
+    originalPrice: 299,
     image: "images/clips (7).jpeg",
     rating: 4.6,
     reviews: 25,
@@ -121,13 +161,37 @@ const products = [
     features: ["Handmade", "Soft cotton yarn", "Durable clip", "Fantasy-inspired design"],
     ingredients: "Cotton Yarn, Metal Clip"
   },
+    // Coffee Cup Bookmark
+  {
+    id: 13,
+    name: "Coffee Cup Bookmark",
+    category: "Bookmarks",
+    price: 200,
+    originalPrice: 200,
+    image: "images/bookmark cup (4).jpeg",  // Update with your image path
+      additionalImages: [
+    "images/bookmark cup (1).jpeg", // Additional image 1
+    "images/bookmark_cup_3.jpeg", // Additional image 2
+    "images/bookmark_cup_4.jpeg"  // Additional image 3
+  ],
+    rating: 4.7,
+    reviews: 15,
+    description: "Adorable crochet coffee cup bookmark, perfect for book lovers and coffee enthusiasts.",
+    features: [
+      "Handmade with soft cotton yarn",
+      "Unique coffee cup design",
+      "Perfect gift for readers",
+      "Lightweight and durable"
+    ],
+    ingredients: "Cotton Yarn, Fabric Marker"
+  },
   // Crochet Roses - 2 colors
   {
     id: 10,
     name: "Crochet Rose - Pink",
     category: "CrochetRoses",
-    price: 180, // Updated price
-    originalPrice: 449,
+    price: 160, // Updated price
+    originalPrice: 180,
     image: "images/chrunches (4).jpeg",
     rating: 4.7,
     reviews: 30,
@@ -139,9 +203,9 @@ const products = [
     id: 11,
     name: "Crochet Rose - Red",
     category: "CrochetRoses",
-    price: 180, // Updated price
-    originalPrice: 449,
-    image: "images/chrunches (2).jpeg",
+    price: 160, // Updated price
+    originalPrice: 180,
+    image: "images/redrose.jpeg",
     rating: 4.8,
     reviews: 28,
     description: "Rich red crochet rose hair clip, perfect for romantic styling.",
@@ -167,7 +231,7 @@ const products = [
     id: 13,
     name: "Crochet Scrunchie - White",
     category: "Scrunchies",
-    price: 130, // Updated price
+    price: 145, // Updated price
     originalPrice: 499,
     image: "images/schrunche white.jpg",
     rating: 4.6,
